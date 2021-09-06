@@ -29,7 +29,7 @@ This is a simple light-weight Student Info application built using Java language
 All the CRUD operations are supported.
 
 
-![Student's App Main Screen](https://photos.app.goo.gl/wQvyjuSPoxFpp6ai6)
+![Student's App Main Screen]<img src="images/StudentsApp.PNG" alt="Logo" width="80" height="80">
 
 ![Student's App Search Screen](https://photos.app.goo.gl/2sS9aRghgHFpQsMx6)
 
