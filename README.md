@@ -50,11 +50,12 @@ When importing the project, select Maven > Maven Existing project option.
 Following addin must be installed in your Eclipse.
 * Maven
 * WindowsBuilder (Swing GUI- to view the design) NOT MANDATORY
-
- Apache Tomcat service running to be stopped. Press Windows+R, type "Services.msc". Stop Apache Tomcat service if is already running. This is because apache h2 console requires service to be started.
+* Apache Tomcat service running to be stopped. Press Windows+R, type "Services.msc". Stop Apache Tomcat service if is already running. This is because apache h2 console requires service to be started. However if you dont want to check data in h2 database console then you can make changes in config/application.properties for the console to be disabled.
+  **spring.h2.console.enabled=false**
 
 ## Usage
 After importing the project, Run as Spring Boot app and select Application.java as main class.
+
 ![Run configuration]<img src="images/runAs.png" width="800" height="600">
 
 Moreover, if importing and running is not possible then Executable-jar is also uploaded to main folder.
@@ -69,11 +70,17 @@ Name: student-app.jar
  ![h2 console browser]<img src="images/h2login.png" width="500" height="500">
  ![Eclipse Console]<img src="images/h2loginConsoleEclipse.png" width="800" height="500">
  
+ Also note that when application is brought up, the database table schema and sample data provided under (src/main/resources) folder are executed.
+ 
 ### Postman 
 Postman can be used to test the API's manually. 
-The workspace is exported and uploaded to base directory of this repository.
+The workspace is exported and uploaded to base directory of this repository.(postman\StudentApp.postman_collection.json)
+You can import this in Postman and run the tests once application is started. 
 
-  
+### Cucumber BDD for Testing
+We have used BDD framework to run the tests to check API's functionality.(src/test/java)
+![Cucumber folder structure]<img src="images/cucumber.png" width="500" height="500">
+
 
 
 
