@@ -78,10 +78,10 @@ The workspace is exported and uploaded to base directory of this repository (pos
 You can import this in Postman and run the tests once application is started. 
 
 ### Cucumber BDD for Testing
-We have used BDD framework to run the tests to check API's functionality (src/test/java)
+I have used BDD framework to run the tests to check API's functionality (src/test/java)
 ![Cucumber folder structure]
 <img src="images/cucumber.png" width="300" height="300">
-
+There are 2 feature files. One with the happy flow and the other one with invalid data to check the API response.
 
 
 
