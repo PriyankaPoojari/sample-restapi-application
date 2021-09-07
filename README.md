@@ -74,12 +74,13 @@ Name: student-app.jar
  
 ### Postman 
 Postman can be used to test the API's manually. 
-The workspace is exported and uploaded to base directory of this repository.(postman\StudentApp.postman_collection.json)
+The workspace is exported and uploaded to base directory of this repository (postman\StudentApp.postman_collection.json)
 You can import this in Postman and run the tests once application is started. 
 
 ### Cucumber BDD for Testing
-We have used BDD framework to run the tests to check API's functionality.(src/test/java)
-![Cucumber folder structure]<img src="images/cucumber.png" width="500" height="500">
+We have used BDD framework to run the tests to check API's functionality (src/test/java)
+![Cucumber folder structure]
+<img src="images/cucumber.png" width="300" height="300">
 
 
 
