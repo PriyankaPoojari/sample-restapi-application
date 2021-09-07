@@ -31,13 +31,14 @@ All the CRUD operations are supported.
 
 ![Student's App Main Screen]<img src="images/StudentsApp.PNG" alt="Logo" width="800" height="300">
 
-![Student's App Search Screen](https://photos.app.goo.gl/2sS9aRghgHFpQsMx6)
+
+![Student's App Search Screen]<img src="images/Capture.PNG" alt="Logo" width="800" height="300">
 
 ### Built With
 * [Spring Boot Framework](https://spring.io/projects/spring-framework)
 * [Apache h2 database](https://www.h2database.com/)
 * [REST API](https://www.mulesoft.com/resources/api)
-*  [Cucumber BDD for testing](https://cucumber.io/)
+* [Cucumber BDD for testing](https://cucumber.io/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -54,16 +55,19 @@ Following addin must be installed in your Eclipse.
 
 ## Usage
 After importing the project, Run as Spring Boot app and select Application.java as main class.
-![run config ](https://photos.app.goo.gl/9M9KgcYeNjFRxA4aA)
+![Run configuration]<img src="images/runAs.png" width="800" height="300">
 
 Moreover, if importing and running is not possible then Executable-jar is also uploaded to main folder.
 Download it and double-click on it. All the api's and the database too will be up and running.
+Name: student-app.jar
+
 ### To access Database
- Open http://localhost:8080/h2-console/login.jsp in browser
- user: sa
- password: password
- JDBC URL: jdbc:h2 <Path to sampledata>
+ Open http://localhost:8080/h2-console/login.jsp in browser.
+ [user: sa, password: password]
+ JDBC URL: jdbc:h2---Path to sampledata--basedir/data/sampledata.mv.db
  The path is also updated in the Eclipse console logs.
+ ![h2 console browser]<img src="images/h2login.png" width="500" height="500">
+ ![Eclipse Console]<img src="images/h2loginConsoleEclipse.png" width="800" height="500">
  
 ### Postman 
 Postman can be used to test the API's manually. 
