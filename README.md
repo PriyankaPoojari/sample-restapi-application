@@ -55,7 +55,7 @@ Following addin must be installed in your Eclipse.
 
 ## Usage
 After importing the project, Run as Spring Boot app and select Application.java as main class.
-![Run configuration]<img src="images/runAs.png" width="800" height="300">
+![Run configuration]<img src="images/runAs.png" width="800" height="600">
 
 Moreover, if importing and running is not possible then Executable-jar is also uploaded to main folder.
 Download it and double-click on it. All the api's and the database too will be up and running.
