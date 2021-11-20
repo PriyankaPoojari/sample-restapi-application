@@ -38,7 +38,9 @@ All the CRUD operations are supported.
 * [Spring Boot Framework](https://spring.io/projects/spring-framework)
 * [Apache h2 database](https://www.h2database.com/)
 * [REST API](https://www.mulesoft.com/resources/api)
-* [Cucumber BDD for testing](https://cucumber.io/)
+* [Mockito for Unit Testing](https://site.mockito.org/)
+* [Cucumber BDD for testing](https://cucumber.io/) REST Assured lib
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
