@@ -8,6 +8,9 @@
 	<name>student-app</name>
 	<description>student app to perform CRUD operations</description>
 
+	<properties>
+		<io-rest-assured.version>4.0.0</io-rest-assured.version>
+	</properties>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -84,12 +87,29 @@
 			<version>4.13</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>rest-assured</artifactId>
-			<version>4.2.0</version>
-			<scope>test</scope>
-		</dependency>
+		 <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>rest-assured</artifactId>
+                <version>${io-rest-assured.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <!--Added required depeendencies due to : https://github.com/rest-assured/rest-assured/issues/1168 -->
+            <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>rest-assured-common</artifactId>
+                <version>${io-rest-assured.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>json-path</artifactId>
+                <version>${io-rest-assured.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>xml-path</artifactId>
+                <version>${io-rest-assured.version}</version>
+            </dependency>
+		
 	</dependencies>
 	<build>
 		<plugins>

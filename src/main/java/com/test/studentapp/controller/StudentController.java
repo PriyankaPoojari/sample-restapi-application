@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.test.studentapp.StringUtil;
 import com.test.studentapp.model.Student;
 import com.test.studentapp.service.StudentService;
 
@@ -78,10 +79,10 @@ public class StudentController {
 			return "Error: No ID found. ID="+newStudent.getId();
 		}
 		Student updatedStudent = studentService.getStudentById(newStudent.getId());
-		if(newStudent.getFirstName()!=null) updatedStudent.setFirstName(newStudent.getFirstName());
-		if(newStudent.getLastName()!=null) updatedStudent.setLastName(newStudent.getLastName());
-		if(newStudent.getClassName()!=null) updatedStudent.setClassName(newStudent.getClassName());	     
-		if(newStudent.getNationality()!=null) updatedStudent.setNationality(newStudent.getNationality());
+		if(!StringUtil.isEmpty(newStudent.getFirstName())) updatedStudent.setFirstName(newStudent.getFirstName());
+		if(!StringUtil.isEmpty(newStudent.getLastName())) updatedStudent.setLastName(newStudent.getLastName());
+		if(!StringUtil.isEmpty(newStudent.getClassName())) updatedStudent.setClassName(newStudent.getClassName());	     
+		if(!StringUtil.isEmpty(newStudent.getNationality())) updatedStudent.setNationality(newStudent.getNationality());
 		
 		studentService.saveOrUpdate(updatedStudent); 
 		return "Updated Successfully : "+updatedStudent.getId();

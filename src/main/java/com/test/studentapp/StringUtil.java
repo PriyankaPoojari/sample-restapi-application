@@ -33,6 +33,7 @@ public class StringUtil {
 		return NUMBERALPHA.matcher(value).matches();
 	}
 	
+	// Checks null or isEmpty
 	public static boolean isEmpty(String value) {
 	   boolean ret = (StringUtils.isEmpty(value))? true: false;
 	   return ret;
