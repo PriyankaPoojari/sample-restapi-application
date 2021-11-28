@@ -38,7 +38,9 @@ All the CRUD operations are supported.
 * [Spring Boot Framework](https://spring.io/projects/spring-framework)
 * [Apache h2 database](https://www.h2database.com/)
 * [REST API](https://www.mulesoft.com/resources/api)
-* [Cucumber BDD for testing](https://cucumber.io/)
+* [Mockito for Unit Testing](https://site.mockito.org/)
+* [Cucumber BDD for testing](https://cucumber.io/) REST Assured lib
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -80,7 +82,9 @@ You can import this in Postman and run the tests once application is started.
 ### Cucumber BDD for Testing
 I have used BDD framework to run the tests to check API's functionality (src/test/java)
 ![Cucumber folder structure]
-<img src="images/cucumber.png" width="300" height="300">
+<img src="images/cucumber1.png" width="300" height="300">
+
+
 There are 2 feature files. One with the happy flow and the other one with invalid data to check the API response.
 
 
