@@ -81,6 +81,7 @@ You can import this in Postman and run the tests once application is started.
 
 ### Cucumber BDD for Testing
 I have used BDD framework to run the tests to check API's functionality (src/test/java)
+Rest-Assured library is used to interact with apis's and check their response code and body.
 ![Cucumber folder structure]
 <img src="images/cucumber1.png" width="300" height="300">
 
